@@ -14,6 +14,8 @@ def guessWord(selectedWord, correctLettersGuessed):
         print(f"You may now correctly spell and guess the word. \nHere are the correct letters you guessed: \n{correctLettersGuessed}")
         userGuessedWord = input("Enter the word spelled correctly: ")
 
+        # Shedlia Note: If you want the user to only guess one letter at a time you might want to add a condition here to check the lenght of userGuessedWord
+        
         if userGuessedWord == selectedWord:
             print(f"Congratualtions you entered the correct word, which was: {selectedWord}!!!")
             break
@@ -22,7 +24,8 @@ def guessWord(selectedWord, correctLettersGuessed):
 
 
 def main():
-
+    # Shedlia Note:
+    # This is a good website to pull random words from with hints :) https://www.wordgamedb.com/endpoints great for working with api's 
     wordsToGuess = ["tiger", "horses","bee"]
 
     print("--Welcome to Hangman--\nGuess the word before you run out of attempts")
